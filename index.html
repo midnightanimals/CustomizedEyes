@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>untitle</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="doll-container">
+            <div class="doll-base">
+            </div>
+        </div>
+
+        <div class="controls-container">
+            <div class="categories">
+                <!-- 分類將通過JavaScript動態生成 -->
+            </div>
+
+            <div class="items-container">
+                <!-- 項目將通過JavaScript動態生成 -->
+            </div>
+
+            <div class="buttons">
+                <button id="randomBtn">隨機</button>
+                <button id="resetBtn">重置</button>
+                <button id="completeBtn">完成</button>
+            </div>
+        </div>
+        <p>此頁面不會有暫存，若退出或重整此頁將會清除所有搭配</p>
+    </div>
+
+
+    <div class="result-modal" id="resultModal">
+        <div class="modal-content">
+            <h2>您的搭配</h2>
+            <p>請複製以下代碼以保存您的搭配：</p>
+            <div class="result-text" id="resultText"></div>
+            <div class="modal-buttons">
+                <button id="copyBtn">複製代碼</button>
+                <button id="closeBtn">關閉</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
