@@ -9,7 +9,7 @@ let currentOutfit = {
 };
 
 // 當前選擇的分類
-let currentCategory = 'hair';
+let currentCategory = 'color';
 
 // 初始化應用
 function initApp() {
@@ -208,7 +208,7 @@ function showResult() {
     }
 
     // 生成結果字串
-    let result = "紙娃娃搭配:";
+    let result = "自訂搭配代碼:";
     Object.keys(currentOutfit).forEach(type => {
         const itemId = currentOutfit[type];
         if (itemId) {
