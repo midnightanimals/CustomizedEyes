@@ -1,5 +1,5 @@
 
-// 當前選擇的服裝
+// 當前選擇的圖片
 let currentOutfit = {
     hair: null,
     top: null,
@@ -87,7 +87,7 @@ function renderItems(categoryType) {
         const img = document.createElement('img');
         img.className = 'item-image';
         // 使用佔位圖片，實際使用時請替換為真實圖片路徑
-        img.src = `https://via.placeholder.com/80x80/f0f0f0/666666?text=${encodeURIComponent(item.name)}`;
+        img.src = `img/01/` + item.image;
         img.alt = item.name;
 
         itemElement.appendChild(img);
@@ -137,7 +137,7 @@ function updateDoll() {
                     const img = document.createElement('img');
                     img.className = 'clothing-item';
                     // 使用佔位圖片，實際使用時請替換為真實圖片路徑
-                    img.src = `https://via.placeholder.com/180x300/f0f0f0/666666?text=${encodeURIComponent(item.name)}`;
+                    img.src = `img/01/` + item.image;
                     img.alt = item.name;
 
                     layer.appendChild(img);
@@ -159,9 +159,10 @@ function randomizeOutfit() {
                 currentOutfit[type] = category.items[randomIndex].id;
             } else {
                 // 非必填分類：80%機率選擇，20%機率不選擇
-                const shouldSelect = Math.random() < 0.8;
+                // const shouldSelect = Math.random() < 0.8;
 
-                if (shouldSelect && category.items.length > 0) {
+                // if (shouldSelect && category.items.length > 0) {
+                if (category.items.length > 0) {
                     const randomIndex = Math.floor(Math.random() * category.items.length);
                     currentOutfit[type] = category.items[randomIndex].id;
                 } else {
@@ -208,7 +209,7 @@ function showResult() {
     }
 
     // 生成結果字串
-    let result = "自訂搭配代碼:";
+    let result = "";
     Object.keys(currentOutfit).forEach(type => {
         const itemId = currentOutfit[type];
         if (itemId) {

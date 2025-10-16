@@ -5,12 +5,13 @@ const clothingData = {
             "type": "color",
             "required": true,
             "items": [
-                { "id": "color1", "name": "紅", "image": "hair1.png" },
-                { "id": "color2", "name": "橙", "image": "hair2.png" },
-                { "id": "color3", "name": "黃", "image": "hair3.png" },
-                { "id": "color4", "name": "綠", "image": "hair4.png" },
-                { "id": "color5", "name": "藍", "image": "hair5.png" },
-                { "id": "color6", "name": "靛", "image": "hair6.png" }
+                { "id": "color1", "name": "紅", "image": "color/red.png" },
+                { "id": "color2", "name": "橙", "image": "color/orange.png" },
+                { "id": "color3", "name": "黃", "image": "color/yellow.png" },
+                { "id": "color4", "name": "綠", "image": "color/green.png" },
+                { "id": "color5", "name": "藍", "image": "color/blue.png" },
+                { "id": "color6", "name": "紫", "image": "color/purple.png" },
+                { "id": "color7", "name": "灰", "image": "color/gray.png" },
             ]
         },
         {
@@ -18,7 +19,7 @@ const clothingData = {
             "type": "pupil",
             "required": false,
             "items": [
-                { "id": "pupil1", "name": "豎瞳", "image": "top1.png" },
+                { "id": "pupil1", "name": "豎瞳", "image": "pupil/main.png" },
                 { "id": "pupil2", "name": "圓瞳", "image": "top2.png" },
                 { "id": "pupil3", "name": "空心", "image": "top3.png" },
                 { "id": "pupil4", "name": "同心圓", "image": "top4.png" },
@@ -31,7 +32,7 @@ const clothingData = {
             "type": "light",
             "required": false,
             "items": [
-                { "id": "light1", "name": "大圓", "image": "bottom1.png" },
+                { "id": "light1", "name": "大圓", "image": "light/round.png" },
                 { "id": "light2", "name": "小圓", "image": "bottom2.png" },
                 { "id": "light3", "name": "側邊", "image": "bottom3.png" },
                 { "id": "light4", "name": "空心圓", "image": "bottom4.png" },
@@ -39,15 +40,15 @@ const clothingData = {
         },
         {
             "name": "加亮顏色",
-            "type": "hightlight",
+            "type": "highlight",
             "required": false,
             "items": [
-                { "id": "hightlight1", "name": "紅", "image": "shoes1.png" },
-                { "id": "hightlight2", "name": "橙", "image": "shoes2.png" },
-                { "id": "hightlight3", "name": "黃", "image": "shoes3.png" },
-                { "id": "hightlight4", "name": "綠", "image": "shoes4.png" },
-                { "id": "hightlight5", "name": "藍", "image": "shoes5.png" },
-                { "id": "hightlight6", "name": "靛", "image": "shoes6.png" }
+                { "id": "highlight1", "name": "紅", "image": "highlight/red.png" },
+                { "id": "highlight2", "name": "橙", "image": "shoes2.png" },
+                { "id": "highlight3", "name": "黃", "image": "highlight/yellow.png" },
+                { "id": "highlight4", "name": "綠", "image": "shoes4.png" },
+                { "id": "highlight5", "name": "藍", "image": "shoes5.png" },
+                { "id": "highlight6", "name": "靛", "image": "shoes6.png" }
             ]
         },
         {
